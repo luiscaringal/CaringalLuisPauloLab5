@@ -65,12 +65,14 @@ public class MainActivity extends AppCompatActivity {
         Intent i = null, chooser = null;
         if(v.getId() == R.id.btn_next_act){
             i = new Intent(this,MainActivity2.class);
+            Log.d("4IT-H","Switched to Activity 2...");
             startActivity(i);
         }
         else if(v.getId() == R.id.btn_map){
             i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse("geo:34.682230, 135.530562"));
             chooser = Intent.createChooser(i,"Select Map App: ");
+            Log.d("4IT-H","Switched to Map...");
             startActivity(chooser);
         }
     }
