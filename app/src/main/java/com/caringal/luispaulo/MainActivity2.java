@@ -14,6 +14,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_2);
+        setTitle("Activity 2");
         Log.d("4IT-H","tumakbo si onCreate()");
         Intent i = new Intent(this,MyCustomService.class);
         startService(i);
